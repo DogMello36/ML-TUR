@@ -13,16 +13,17 @@
     --text:        #0f172a;
     --sidebar-w:   220px;
     --azul-escuro: #0a3d62;
-    --azul-nav: #efefef;
-    --txt-nav: #17406b;
-    --txt-nav-hover: #0c2b4b;
+    --azul-nav: #17406b;
+    --txt-nav: #fff;
+    --txt-nav-hover: #9f9f9f;
     --laranja: #f5821f;
     --amarelo: #f9a825;
     --verde-whatsapp: #25d366;
     --verde-whatsapp-escuro: #1ea952;
     --cinza-texto: #4a4a4a;
     --branco: #ffffff;
-}
+
+}          
 
 /* ── Reset base ── */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -110,10 +111,15 @@ body {
     gap: 10px;
 }
 
+
 /* ===== Navegação ===== */
   .main-nav {
     background: var(--azul-nav);
   }
+
+
+
+
  
   .main-nav ul {
     list-style: none;
@@ -128,7 +134,7 @@ body {
  
   .main-nav li a {
     display: block;
-    color: var(--txt-nav);
+    color: #fff;
     text-decoration: none;
     font-size: 15px;
     font-weight: 500;
@@ -138,7 +144,7 @@ body {
   }
  
   .main-nav li a:hover {
-    color: var(--txt-nav-hover);
+    color: #9c9c9c;
     font-weight: 700;
     border-bottom-color: var(--amarelo);
   }
