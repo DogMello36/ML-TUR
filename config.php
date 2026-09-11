@@ -9,6 +9,7 @@ if ( !defined('ABSPATH') )
 if ( !defined('BASEURL') )
 	define('BASEURL', '/ML-TUR/');	
 
+	
 /** Template do cabeçaho e do rodapé das páginas **/ 
 const HEADER_TEMPLATE = ABSPATH . 'inc/header.php';
 const FOOTER_TEMPLATE = ABSPATH . 'inc/footer.php';
