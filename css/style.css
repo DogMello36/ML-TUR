@@ -166,25 +166,28 @@ body {
    RESPONSIVO
    ============================================================ */
 @media (max-width: 900px) {
-    .detail-wrap { grid-template-columns: 1fr; }
-}
-@media (max-width: 860px) {
-    .form-wrap { grid-template-columns: 1fr; }
-}
-@media (max-width: 768px) {
-    .sidebar { transform: translateX(-100%); transition: transform .25s; }
-    .sidebar.open { transform: translateX(0); }
-    .main { margin-left: 0; }
-    .sidebar-toggle { display: flex; align-items: center; }
-    .stats-row { grid-template-columns: 1fr; }
-    .content { padding: 1rem; }
-    .topbar  { padding: 0 1rem; }
-    .search-wrap { display: none; }
-}
-@media (max-width: 576px) {
-    .cards-grid  { padding: 0 1rem 3rem; }
-    .detail-wrap { padding: 0 1rem 3rem; }
-    .form-wrap   { padding: 0 1rem 3rem; }
-    .page-header { padding: 1.5rem 1rem 1rem; }
-    .topbar      { padding: 0 1rem; }
-}
+    .header-top {
+      flex-wrap: wrap;
+      padding: 14px 20px;
+    }
+    .slogan {
+      order: 3;a
+      flex-basis: 100%;
+      text-align: center;
+      font-size: 16px;
+    }
+    .main-nav ul {
+      gap: 20px;
+      flex-wrap: wrap;
+      padding: 10px 20px;
+    }
+  }
+ 
+  @media (max-width: 480px) {
+    .whatsapp-text {
+      font-size: 12px;
+    }
+    .logo-text .brand {
+      font-size: 20px;
+    }
+  }
