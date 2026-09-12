@@ -17,7 +17,7 @@
 
     <nav class="topbar main-nav">
         <a href="index.php"><img class="topbar-logo" src="img\image-Photoroom.png" alt=""><span></span></a>
-            <ul>
+            <ul class="desktop-menu">
             <li><a href="index.php">Início</a></li>
             <li><a href="excursões.php">Excursões</a></li>
             <li><a href="sobre-nos.php">Sobre Nós</a></li>
@@ -25,6 +25,21 @@
             <li><a href="dúvidas.php">Dúvidas</a></li>
             <li><a href="contato.php">Contato</a></li>
             </ul>
+
+            <div class="mobile-menu-wrapper">
+                <button type="button" class="mobile-menu-btn" id="mobileMenuBtn" aria-haspopup="true" aria-expanded="false" aria-controls="mobileMenuDropdown">
+                    <i class="fas fa-bars"></i> Menu
+                </button>
+                <ul class="mobile-menu-dropdown" id="mobileMenuDropdown">
+                    <li><a href="index.php">Início</a></li>
+                    <li><a href="excursões.php">Excursões</a></li>
+                    <li><a href="sobre-nos.php">Sobre Nós</a></li>
+                    <li><a href="depoimentos.php">Depoimentos</a></li>
+                    <li><a href="dúvidas.php">Dúvidas</a></li>
+                    <li><a href="contato.php">Contato</a></li>
+                </ul>
+            </div>
+
         <a href="https://wa.me/5515996065186" class="whatsapp-btn" target="_blank" rel="noopener">
       <span class="whatsapp-icon-circle">
         <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
@@ -36,3 +51,25 @@
     </a>
         
     </nav>
+
+    <script>
+        (function () {
+            var btn = document.getElementById('mobileMenuBtn');
+            var dropdown = document.getElementById('mobileMenuDropdown');
+
+            if (!btn || !dropdown) return;
+
+            btn.addEventListener('click', function (e) {
+                e.stopPropagation();
+                var isOpen = dropdown.classList.toggle('show');
+                btn.setAttribute('aria-expanded', isOpen);
+            });
+
+            document.addEventListener('click', function (e) {
+                if (!dropdown.contains(e.target) && !btn.contains(e.target)) {
+                    dropdown.classList.remove('show');
+                    btn.setAttribute('aria-expanded', 'false');
+                }
+            });
+        })();
+    </script>
