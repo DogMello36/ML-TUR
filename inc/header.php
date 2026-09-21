@@ -4,14 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Garage — Catálogo de Motos</title>
+    <title>MLTUR</title>
     <link rel="stylesheet" href="/ML-TUR/css/bootstrap.css">
-<link rel="stylesheet" href="/ML-TUR/css/style.css">
-<link rel="stylesheet" href="/ML-TUR/css/all.min.css">
-	<link rel="icon" type="image/icon" href="<?php echo BASEURL; ?>img/icon.png">
+    <link rel="stylesheet" href="/ML-TUR/css/style.css">
+    <link rel="stylesheet" href="/ML-TUR/css/all.min.css">
+    <link rel="stylesheet" href="/ML-TUR/css/stl_index.css">
+	<link rel="icon" type="image/icon" href="<?php echo BASEURL; ?>img/icon.ico">
 </head>
-
-
 
 <body>
 
@@ -24,6 +23,7 @@
             <li><a href="depoimentos.php">Depoimentos</a></li>
             <li><a href="dúvidas.php">Dúvidas</a></li>
             <li><a href="contato.php">Contato</a></li>
+            <li><a href="sobre.php">Sobre</a></li>
             </ul>
 
             <div class="mobile-menu-wrapper">
@@ -37,6 +37,7 @@
                     <li><a href="depoimentos.php">Depoimentos</a></li>
                     <li><a href="dúvidas.php">Dúvidas</a></li>
                     <li><a href="contato.php">Contato</a></li>
+                    <li><a href="sobre.php">Sobre</a></li>
                 </ul>
             </div>
 
@@ -52,24 +53,4 @@
         
     </nav>
 
-    <script>
-        (function () {
-            var btn = document.getElementById('mobileMenuBtn');
-            var dropdown = document.getElementById('mobileMenuDropdown');
-
-            if (!btn || !dropdown) return;
-
-            btn.addEventListener('click', function (e) {
-                e.stopPropagation();
-                var isOpen = dropdown.classList.toggle('show');
-                btn.setAttribute('aria-expanded', isOpen);
-            });
-
-            document.addEventListener('click', function (e) {
-                if (!dropdown.contains(e.target) && !btn.contains(e.target)) {
-                    dropdown.classList.remove('show');
-                    btn.setAttribute('aria-expanded', 'false');
-                }
-            });
-        })();
-    </script>
+   

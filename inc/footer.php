@@ -46,6 +46,28 @@
 	
 </body>
 
+ <script>
+        (function () {
+            var btn = document.getElementById('mobileMenuBtn');
+            var dropdown = document.getElementById('mobileMenuDropdown');
+
+            if (!btn || !dropdown) return;
+
+            btn.addEventListener('click', function (e) {
+                e.stopPropagation();
+                var isOpen = dropdown.classList.toggle('show');
+                btn.setAttribute('aria-expanded', isOpen);
+            });
+
+            document.addEventListener('click', function (e) {
+                if (!dropdown.contains(e.target) && !btn.contains(e.target)) {
+                    dropdown.classList.remove('show');
+                    btn.setAttribute('aria-expanded', 'false');
+                }
+            });
+        })();
+    </script>
+
 <script src="js/all.js"></script>
 <script src="js/bootstrap.bundle.min.js"></script>
 <script src="js/jquery-3.6.0.min.js"></script>
