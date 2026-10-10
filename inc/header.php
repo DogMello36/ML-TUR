@@ -18,12 +18,9 @@
         <a href="index.php"><img class="topbar-logo" src="img\image-Photoroom.png" alt=""><span></span></a>
             <ul class="desktop-menu">
             <li><a href="index.php">Início</a></li>
-            <li><a href="excursões.php">Excursões</a></li>
-            <li><a href="sobre-nos.php">Sobre Nós</a></li>
-            <li><a href="depoimentos.php">Depoimentos</a></li>
-            <li><a href="dúvidas.php">Dúvidas</a></li>
-            <li><a href="contato.php">Contato</a></li>
-            <li><a href="sobre.php">Sobre</a></li>
+            <li><a href="#exc">Excursões</a></li>
+            <li><a href="#dep">Depoimentos</a></li>
+            <li><a href="sobre.php">Sobre Nós</a></li>
             </ul>
 
             <div class="mobile-menu-wrapper">
@@ -32,12 +29,9 @@
                 </button>
                 <ul class="mobile-menu-dropdown" id="mobileMenuDropdown">
                     <li><a href="index.php">Início</a></li>
-                    <li><a href="excursões.php">Excursões</a></li>
-                    <li><a href="sobre-nos.php">Sobre Nós</a></li>
-                    <li><a href="depoimentos.php">Depoimentos</a></li>
-                    <li><a href="dúvidas.php">Dúvidas</a></li>
-                    <li><a href="contato.php">Contato</a></li>
-                    <li><a href="sobre.php">Sobre</a></li>
+                    <li><a href="#exc">Excursões</a></li>
+                    <li><a href="#dep">Depoimentos</a></li>
+                    <li><a href="sobre.php">Sobre Nós</a></li>
                 </ul>
             </div>
 
