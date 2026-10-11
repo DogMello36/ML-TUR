@@ -9,7 +9,7 @@
 
             <div class="footer-logo">
                 <a href="index.php">
-                    <img class="topbar-logo" src="img\image-Photoroom.png" alt="MLTur">
+                    <img class="topbar-logo" src="<?php echo BASEURL; ?>img\image-Photoroom.png" alt="MLTur">
                 </a>
             </div>
 

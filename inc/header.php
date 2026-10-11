@@ -5,22 +5,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MLTUR</title>
-    <link rel="stylesheet" href="/ML-TUR/css/bootstrap.css">
-    <link rel="stylesheet" href="/ML-TUR/css/style.css">
-    <link rel="stylesheet" href="/ML-TUR/css/all.min.css">
-    <link rel="stylesheet" href="/ML-TUR/css/stl_index.css">
+    <link rel="stylesheet" href="<?php echo BASEURL; ?>css/bootstrap.css">
+    <link rel="stylesheet" href="<?php echo BASEURL; ?>css/style.css">
+    <link rel="stylesheet" href="<?php echo BASEURL; ?>css/all.min.css">
+    <link rel="stylesheet" href="<?php echo BASEURL; ?>css/stl_index.css">
 	<link rel="icon" type="image/icon" href="<?php echo BASEURL; ?>img/icon.ico">
 </head>
 
 <body>
 
     <nav class="topbar main-nav">
-        <a href="index.php"><img class="topbar-logo" src="img\image-Photoroom.png" alt=""><span></span></a>
+        <a href="<?php echo BASEURL; ?>index.php"><img class="topbar-logo" src="<?php echo BASEURL; ?>img\image-Photoroom.png" alt=""><span></span></a>
             <ul class="desktop-menu">
-            <li><a href="index.php">Início</a></li>
-            <li><a href="#exc">Excursões</a></li>
-            <li><a href="#dep">Depoimentos</a></li>
-            <li><a href="sobre.php">Sobre Nós</a></li>
+            <li><a href="<?php echo BASEURL; ?>index.php">Início</a></li>
+            <li><a href="<?php echo BASEURL; ?>index.php#exc">Excursões</a></li>
+            <li><a href="<?php echo BASEURL; ?>index.php#dep">Depoimentos</a></li>
+            <li><a href="<?php echo BASEURL; ?>custumers/hist.php">Nossa história</a></li>
+            <li><a href="<?php echo BASEURL; ?>custumers/sobre.php">Sobre Nós</a></li>
             </ul>
 
             <div class="mobile-menu-wrapper">
@@ -28,10 +29,11 @@
                     <i class="fas fa-bars"></i> Menu
                 </button>
                 <ul class="mobile-menu-dropdown" id="mobileMenuDropdown">
-                    <li><a href="index.php">Início</a></li>
-                    <li><a href="#exc">Excursões</a></li>
-                    <li><a href="#dep">Depoimentos</a></li>
-                    <li><a href="sobre.php">Sobre Nós</a></li>
+                    <li><a href="<?php echo BASEURL; ?>index.php">Início</a></li>
+                    <li><a href="<?php echo BASEURL; ?>index.php#exc">Excursões</a></li>
+                    <li><a href="<?php echo BASEURL; ?>index.php#dep">Depoimentos</a></li>
+                    <li><a href="<?php echo BASEURL; ?>custumers/hist.php">Nossa história</a></li>
+                    <li><a href="<?php echo BASEURL; ?>custumers/sobre.php">Sobre Nós</a></li>
                 </ul>
             </div>
 

@@ -648,7 +648,7 @@ body {
 
   .sobre-mltur {
     background: var(--accent-lt);
-    background: linear-gradient(90deg, #fff 0%, #ffe8cb 100%);
+    background: linear-gradient(90deg, #fff 0%, #fff7ed 100%);
   }
 
   .sobre-wrap {
@@ -665,7 +665,6 @@ body {
     min-height: 270px;
     background: linear-gradient(135deg, var(--azul-nav), var(--laranja));
     overflow: hidden;
-    border-radius: 14px;
   }
 
   .sobre-img img {
@@ -955,5 +954,106 @@ body {
     }
     .newsletter-form {
       max-width: none;
+    }
+  }
+
+
+/* ============================================================
+   PÁGINA SOBRE NÓS / NOSSA HISTÓRIA (custumers/)
+   ============================================================ */
+
+  .pagina-texto {
+    background: var(--branco);
+    padding: 56px 0 64px;
+  }
+
+  .texto-box {
+    max-width: 820px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  .texto-tag {
+    display: block;
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--laranja);
+    margin-bottom: 8px;
+  }
+
+  .texto-box h1 {
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 1.15;
+    color: var(--azul-nav);
+    margin-bottom: 14px;
+  }
+
+  .texto-box h1::after {
+    content: "";
+    display: block;
+    width: 56px;
+    height: 4px;
+    background: var(--laranja);
+    border-radius: 2px;
+    margin-top: 14px;
+  }
+
+  .texto-destaque {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.45;
+    color: var(--azul-nav);
+    margin: 22px 0 26px;
+  }
+
+  .texto-box p {
+    font-size: 17px;
+    line-height: 1.75;
+    color: var(--cinza-texto);
+    margin-bottom: 18px;
+  }
+
+  .texto-box strong {
+    color: var(--azul-nav);
+  }
+
+  .texto-assinatura {
+    margin-top: 34px;
+    padding: 22px 26px;
+    background: var(--accent-lt);
+    border-left: 4px solid var(--laranja);
+    border-radius: 0 12px 12px 0;
+  }
+
+  .texto-assinatura .marca {
+    display: block;
+    font-weight: 800;
+    color: var(--azul-nav);
+    margin-bottom: 4px;
+  }
+
+  .texto-assinatura .frase {
+    font-size: 18px;
+    font-style: italic;
+    font-weight: 600;
+    color: var(--laranja);
+    margin: 0;
+  }
+
+  @media (max-width: 600px) {
+    .pagina-texto {
+      padding: 36px 0 44px;
+    }
+    .texto-box h1 {
+      font-size: 30px;
+    }
+    .texto-destaque {
+      font-size: 18px;
+    }
+    .texto-box p {
+      font-size: 16px;
     }
   }

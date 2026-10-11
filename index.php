@@ -47,7 +47,7 @@ include(HEADER_TEMPLATE); ?>
             <span class="sobre-tag">SOBRE A MLTUR</span>
             <h2>Transformando destinos<br>em boas histórias</h2>
             <p>A MLTur é uma agência de viagens e turismo especializada em excursões. Nosso compromisso é oferecer experiências únicas, com segurança, conforto e um atendimento próximo, porque acreditamos que viajar é muito mais do que conhecer lugares: é colecionar momentos.</p>
-            <a href="sobre-nos.php" class="exc-btn">Saiba mais sobre nós <span aria-hidden="true">→</span></a>
+            <a href="<?php echo BASEURL; ?>custumers/sobre.php" class="exc-btn">Saiba mais sobre nós <span aria-hidden="true">→</span></a>
         </div>
 
         <ul class="sobre-diferenciais">
