@@ -7,7 +7,7 @@ if ( !defined('ABSPATH') )
 	
 /** caminho no server para o sistema **/
 if ( !defined('BASEURL') )
-	define('BASEURL', '/ML-TUR/');	
+	define('BASEURL', '/');	
 
 	
 /** Template do cabeçaho e do rodapé das páginas **/ 
