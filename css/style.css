@@ -202,8 +202,8 @@ body {
     align-items: center;
     gap: 8px;
     background: transparent;
-    border: 1px solid var(--azul-escuro);
-    color: var(--azul-escuro);
+    border: 3px solid var(--branco);
+    color: var(--branco);
     padding: 8px 16px;
     border-radius: 6px;
     font-size: 14px;
@@ -1055,5 +1055,246 @@ body {
     }
     .texto-box p {
       font-size: 16px;
+    }
+  }
+
+  /* ============================================================
+   PÁGINA DA VIAGEM (custumers/holambra.php)
+   ============================================================ */
+ 
+  .viagem {
+    background: var(--branco);
+    padding: 48px 0 64px;
+  }
+ 
+  .viagem-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 5fr) minmax(0, 6fr);
+    gap: 40px;
+    align-items: start;
+  }
+ 
+  .viagem-foto {
+    position: sticky;
+    top: 24px;
+    border-radius: 16px;
+    overflow: hidden;
+    aspect-ratio: 4 / 5;
+    background: linear-gradient(135deg, var(--azul-nav), var(--laranja));
+    box-shadow: 0 8px 24px rgba(10, 61, 98, 0.18);
+  }
+ 
+  .viagem-foto img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+ 
+  .viagem-selo {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    background: var(--laranja);
+    color: var(--branco);
+    font-weight: 800;
+    font-size: 18px;
+    padding: 8px 16px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+  }
+ 
+  .viagem-info h1 {
+    font-size: 34px;
+    font-weight: 800;
+    line-height: 1.15;
+    color: var(--azul-nav);
+    margin-bottom: 18px;
+  }
+ 
+  .viagem-info p {
+    font-size: 16px;
+    line-height: 1.65;
+    color: var(--cinza-texto);
+    margin-bottom: 14px;
+  }
+ 
+  .viagem-intro {
+    font-size: 18px !important;
+    font-weight: 600;
+    color: var(--azul-nav) !important;
+  }
+ 
+  .viagem-destaques,
+  .viagem-incluso ul {
+    list-style: none;
+    margin: 18px 0 22px;
+  }
+ 
+  .viagem-destaques li,
+  .viagem-incluso li {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 16px;
+    color: var(--azul-nav);
+    padding: 8px 0;
+    border-bottom: 1px solid var(--border);
+  }
+ 
+  .viagem-destaques li:last-child,
+  .viagem-incluso li:last-child {
+    border-bottom: none;
+  }
+ 
+  .viagem-destaques li span {
+    width: 34px;
+    height: 34px;
+    flex-shrink: 0;
+    border-radius: 50%;
+    background: var(--accent-lt);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+ 
+  .viagem-dados {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+    margin-bottom: 18px;
+  }
+ 
+  .viagem-dado {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background: var(--surface);
+    border-radius: 12px;
+    padding: 14px 16px;
+  }
+ 
+  .dado-icone {
+    font-size: 26px;
+  }
+ 
+  .viagem-dado small,
+  .viagem-precos small {
+    display: block;
+    font-size: 13px;
+    color: var(--muted);
+  }
+ 
+  .viagem-dado strong {
+    font-size: 18px;
+    color: var(--azul-nav);
+  }
+ 
+  .viagem-precos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+    margin-bottom: 22px;
+  }
+ 
+  .viagem-precos > div {
+    border-radius: 14px;
+    padding: 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+ 
+  .preco-normal {
+    border: 2px solid var(--azul-nav);
+  }
+ 
+  .preco-pix {
+    background: var(--accent-lt);
+    border: 2px solid var(--laranja);
+  }
+ 
+  .viagem-precos strong {
+    font-size: 28px;
+    font-weight: 800;
+    color: var(--azul-nav);
+  }
+ 
+  .preco-pix strong {
+    color: var(--laranja);
+  }
+ 
+  .viagem-precos span {
+    font-size: 14px;
+    color: var(--cinza-texto);
+  }
+ 
+  .viagem-incluso {
+    background: var(--surface);
+    border-radius: 14px;
+    padding: 18px 22px 8px;
+    margin-bottom: 22px;
+  }
+ 
+  .viagem-incluso h2 {
+    font-size: 20px;
+    font-weight: 800;
+    color: var(--azul-nav);
+  }
+ 
+  .viagem-fecho {
+    font-weight: 600;
+    color: var(--azul-nav) !important;
+  }
+ 
+  .viagem-cta {
+    display: block;
+    text-align: center;
+    background: var(--verde-whatsapp);
+    color: var(--branco);
+    font-size: 18px;
+    font-weight: 700;
+    text-decoration: none;
+    padding: 16px 24px;
+    border-radius: 40px;
+    margin: 20px 0 10px;
+    transition: background 0.2s ease, transform 0.2s ease;
+  }
+ 
+  .viagem-cta:hover {
+    background: var(--verde-whatsapp-escuro);
+    color: var(--branco);
+    transform: translateY(-1px);
+  }
+ 
+  .viagem-vagas {
+    text-align: center;
+    font-size: 14px !important;
+  }
+ 
+  .viagem-tags {
+    font-size: 13px !important;
+    color: var(--muted) !important;
+    margin-top: 18px;
+  }
+ 
+  @media (max-width: 900px) {
+    .viagem-grid {
+      grid-template-columns: 1fr;
+      gap: 28px;
+    }
+    .viagem-foto {
+      position: static;
+      aspect-ratio: 4 / 3;
+    }
+    .viagem-info h1 {
+      font-size: 28px;
+    }
+  }
+ 
+  @media (max-width: 480px) {
+    .viagem-dados,
+    .viagem-precos {
+      grid-template-columns: 1fr;
     }
   }

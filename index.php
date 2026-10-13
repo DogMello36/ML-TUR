@@ -28,7 +28,7 @@ include(HEADER_TEMPLATE); ?>
                 <div class="exc-body">
                     <h3 class="exc-nome">Natal Expoflora</h3>
                     <p class="exc-desc">Que tal viver uma noite cheia de luzes, flores e toda a magia do Natal em Holambra?<br>A magia do Natal floresce em Holambra. Vem com a gente!</p>
-                    <a href="excursões.php" class="exc-btn">Saiba mais <span aria-hidden="true">→</span></a>
+                    <a href="<?php echo BASEURL; ?>custumers/sobre-h.php" class="exc-btn">Saiba mais <span aria-hidden="true">→</span></a>
                 </div>
             </article>
 
